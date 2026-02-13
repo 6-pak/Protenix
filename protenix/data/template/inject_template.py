@@ -55,8 +55,8 @@ def build_template_features_from_structure(
             template_restype: [num_templates, N_token]
             template_all_atom_mask: [num_templates, N_token, 37]
             template_all_atom_positions: [num_templates, N_token, 37, 3]
-            template_pseudo_beta_mask: [num_templates, N_token]
-            template_backbone_frame_mask: [num_templates, N_token]
+            template_pseudo_beta_mask: [num_templates, N_token, N_token]
+            template_backbone_frame_mask: [num_templates, N_token, N_token]
             template_distogram: [num_templates, N_token, N_token, 39]
             template_unit_vector: [num_templates, N_token, N_token, 3]
     """
